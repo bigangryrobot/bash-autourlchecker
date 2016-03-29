@@ -45,7 +45,7 @@ do
     		ECHO_STATUS $STATUS_CODE		
     fi
     urltobetested=$(echo $next|cut -d"|" -f1)
-	STATUS_CODE=`curl --max-time 120 --output /tmp/url.prod --silent --write-out '%{http_code}\n' $urltobetested`
+	STATUS_CODE=`curl --max-time 60 --output /tmp/url.prod --silent --write-out '%{http_code}\n' $urltobetested`
     ECHO_STATUS $STATUS_CODE	
 done;
 }
