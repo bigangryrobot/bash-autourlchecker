@@ -5,8 +5,8 @@ export TIME=`date +%d-%m-%Y_%H.%M.%S`
 SAFE_STATUSCODES=( 200 201 202 203 204 205 206 207 208 226 401 )
 export STATUS_UP=`echo -e "[ RUNNING ]"`
 export STATUS_DOWN=`echo -e "[ DOWN ]"`
-export SCRIPT_LOG=/home/commander/log/autoUrlChecker/`date '+%m%d%y'`.autoUrlCheckerReadable.log
-export DIFF_LOG=/home/commander/log/autoUrlChecker/`date '+%m%d%y'`.autoUrlCheckerDiff.log
+export SCRIPT_LOG=`date '+%m%d%y'`.autoUrlCheckerReadable.log
+export DIFF_LOG=`date '+%m%d%y'`.autoUrlCheckerDiff.log
 }
 
 URL_Status() {
